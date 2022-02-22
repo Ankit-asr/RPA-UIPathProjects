@@ -1,0 +1,160 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="731,1239" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mca="clr-namespace:Microsoft.CSharp.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="MulipleScreenshots" sap:VirtualizedContainerService.HintSize="476,1174" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="ui:Image" Name="image1" />
+      <Variable x:TypeArguments="ui:Image" Name="image2" />
+      <Variable x:TypeArguments="ui:Image" Name="image3" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: All Categories- Buy Products Online at Best Price in India - All Categories | Fl" sap:VirtualizedContainerService.HintSize="434,1082" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="4ef0de88-1937-4a1b-9f7d-9931b9c6d27a" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,866" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="ui:UiElement" Name="image1" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTakeScreenshot DisplayName="Take Screenshot 'realme C21Y'" FileName="screenshot1.png" FileNameMode="None" sap:VirtualizedContainerService.HintSize="334,231" sap2010:WorkflowViewState.IdRef="NTakeScreenshot_1" Version="V1">
+              <uix:NTakeScreenshot.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.flipkart.com/search?sid=tyy%2C4io&amp;otracker=CLP_Filters&amp;p%5B%5D=facets.ram%255B%255D%3D4GB" DesignTimeRectangle="374, 336, 93, 200" ElementType="Icon" FriendlyName="'IMG'" FullSelectorArgument="&lt;webctrl aaname='realme C21Y (Cross Black, 64 GB)' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='realme C21Y (Cross Black, 64 GB)' tag='IMG' type='' /&gt;" Guid="2cf31e19-38eb-4003-982e-fef9043f9466" InformativeScreenshot="2b17a5f9a2e27e60e3a3e9f5f8b474f1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='All Categories- Buy Products Online at Best Price in India - All Categories | Flipkart.com' /&gt;" SearchSteps="FuzzySelector">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="545, 336, 469, 18" ElementType="Text" FriendlyName="'realme C21Y'" FullSelectorArgument="&lt;webctrl aaname='realme C21Y (Cross Black, 64 GB)' parentid='container' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='realme C21Y (Cross Black, 64 GB)' parentid='container' tag='DIV' type='' check:text='realme C21Y (Cross Black, 64 GB)' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTakeScreenshot.Target>
+            </uix:NTakeScreenshot>
+            <uix:NTakeScreenshot DisplayName="Take Screenshot 'realme C21Y'" FileName="screenshot2.png" FileNameMode="None" sap:VirtualizedContainerService.HintSize="334,231" sap2010:WorkflowViewState.IdRef="NTakeScreenshot_2" Version="V1">
+              <uix:NTakeScreenshot.OutImage>
+                <OutArgument x:TypeArguments="ui:Image">
+                  <mca:CSharpReference x:TypeArguments="ui:Image" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">image2</mca:CSharpReference>
+                </OutArgument>
+              </uix:NTakeScreenshot.OutImage>
+              <uix:NTakeScreenshot.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.flipkart.com/search?sid=tyy%2C4io&amp;otracker=CLP_Filters&amp;p%5B%5D=facets.ram%255B%255D%3D4GB" DesignTimeRectangle="374, 248, 93, 200" ElementType="Icon" FriendlyName="'IMG'" FullSelectorArgument="&lt;webctrl aaname='realme C21Y (Cross Blue, 64 GB)' parentid='container' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='realme C21Y (Cross Blue, 64 GB)' parentid='container' tag='IMG' type='' /&gt;" Guid="fd858fc2-e81c-4f69-8891-aafecd1c741e" InformativeScreenshot="68ca89040dfb4487457e6e0ea8327f0e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='All Categories- Buy Products Online at Best Price in India - All Categories | Flipkart.com' /&gt;" SearchSteps="FuzzySelector">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="545, 248, 469, 18" ElementType="Text" FriendlyName="'realme C21Y'" FullSelectorArgument="&lt;webctrl aaname='realme C21Y (Cross Blue, 64 GB)' parentid='container' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='realme C21Y (Cross Blue, 64 GB)' parentid='container' tag='DIV' type='' check:text='realme C21Y (Cross Blue, 64 GB)' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTakeScreenshot.Target>
+            </uix:NTakeScreenshot>
+            <uix:NTakeScreenshot DisplayName="Take Screenshot 'POCO C31'" FileName="screenshot3.png" FileNameMode="None" sap:VirtualizedContainerService.HintSize="334,231" sap2010:WorkflowViewState.IdRef="NTakeScreenshot_3" Version="V1">
+              <uix:NTakeScreenshot.OutImage>
+                <OutArgument x:TypeArguments="ui:Image">
+                  <mca:CSharpReference x:TypeArguments="ui:Image" sap2010:WorkflowViewState.IdRef="CSharpReference`1_3">image3</mca:CSharpReference>
+                </OutArgument>
+              </uix:NTakeScreenshot.OutImage>
+              <uix:NTakeScreenshot.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.flipkart.com/search?sid=tyy%2C4io&amp;otracker=CLP_Filters&amp;p%5B%5D=facets.ram%255B%255D%3D4GB" DesignTimeRectangle="373, 533, 95, 200" ElementType="Icon" FriendlyName="'IMG'" FullSelectorArgument="&lt;webctrl aaname='POCO C31 (Royal Blue, 64 GB)' parentid='container' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='POCO C31 (Royal Blue, 64 GB)' parentid='container' tag='IMG' type='' /&gt;" Guid="0cee91dc-0f51-432d-becc-bebc4deb3b56" InformativeScreenshot="42ae69c0ac7a22d113eba4173ddf4014.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='All Categories- Buy Products Online at Best Price in India - All Categories | Flipkart.com' /&gt;" SearchSteps="FuzzySelector">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="545, 533, 469, 18" ElementType="Text" FriendlyName="'POCO C31'" FullSelectorArgument="&lt;webctrl aaname='POCO C31 (Royal Blue, 64 GB)' parentid='container' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='POCO C31 (Royal Blue, 64 GB)' parentid='container' tag='DIV' type='' check:text='POCO C31 (Royal Blue, 64 GB)' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTakeScreenshot.Target>
+            </uix:NTakeScreenshot>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1382, 744" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="a928165470600b1087d3c21d1adeec75.png" Selector="&lt;html app='chrome.exe' title='All Categories- Buy Products Online at Best Price in India - All Categories | Flipkart.com'/&gt;" Url="https://www.flipkart.com/search?sid=tyy%2C4io&amp;otracker=CLP_Filters&amp;p%5B%5D=facets.ram%255B%255D%3D4GB" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
