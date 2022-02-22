@@ -1,0 +1,146 @@
+Product,Specifications
+"realme C21Y (Cross Black, 64 GB)",4 GB RAM | 64 GB ROM | Expandable Upto 256 GB
+16.51 cm (6.5 inch) HD+ Display
+13MP + 2MP + 2MP | 5MP Front Camera
+5000 mAh Battery
+Unisoc T610 Processor
+1 Year Warranty for Mobile and 6 Months for Accessories
+"realme C21Y (Cross Blue, 64 GB)",4 GB RAM | 64 GB ROM | Expandable Upto 256 GB
+16.51 cm (6.5 inch) HD+ Display
+13MP + 2MP + 2MP | 5MP Front Camera
+5000 mAh Battery
+Unisoc T610 Processor
+1 Year Warranty for Mobile and 6 Months for Accessories
+"POCO C31 (Royal Blue, 64 GB)","4 GB RAM | 64 GB ROM | Expandable Upto 512 GB
+16.59 cm (6.53 inch) HD+ Display
+13MP + 2MP + 2MP | 5MP Front Camera
+5000 mAh Lithium-ion Polymer Battery
+MediaTek Helio G35 Processor
+1 Year Warranty for Handset, 6 Months for Accessories"
+"realme C25_Y (Metal Grey, 128 GB)",4 GB RAM | 128 GB ROM
+16.51 cm (6.5 inch) HD+ Display
+50MP + 2MP + 2MP | 8MP Front Camera
+5000 mAh LiPo Battery
+Unisoc T618 Processor
+1 Year Domestic Warranty
+"realme C25_Y (Glacier Blue, 128 GB)",4 GB RAM | 128 GB ROM
+16.51 cm (6.5 inch) HD+ Display
+50MP + 2MP + 2MP | 8MP Front Camera
+5000 mAh LiPo Battery
+Unisoc T618 Processor
+1 Year Domestic Warranty
+"realme C25_Y (Metal Grey, 64 GB)",4 GB RAM | 64 GB ROM
+16.51 cm (6.5 inch) HD+ Display
+50MP + 2MP + 2MP | 8MP Front Camera
+5000 mAh LiPo Battery
+Unisoc T618 Processor
+1 Year Domestic Warranty
+"realme C25Y (Glacier Blue, 128 GB)",4 GB RAM | 128 GB ROM | Expandable Upto 256 GB
+16.51 cm (6.5 inch) HD+ Display
+50MP + 2MP + 2MP | 8MP Front Camera
+5000 mAh Battery
+Unisoc T610 Octa Core Processor
+1 Year Warranty for Mobile and 6 Months for Accessories
+"realme C25_Y (Glacier Blue, 64 GB)",4 GB RAM | 64 GB ROM
+16.51 cm (6.5 inch) HD+ Display
+50MP + 2MP + 2MP | 8MP Front Camera
+5000 mAh LiPo Battery
+Unisoc T618 Processor
+1 Year Domestic Warranty
+"POCO C31 (Shadow Gray, 64 GB)","4 GB RAM | 64 GB ROM | Expandable Upto 512 GB
+16.59 cm (6.53 inch) HD+ Display
+13MP + 2MP + 2MP | 5MP Front Camera
+5000 mAh Lithium-ion Polymer Battery
+MediaTek Helio G35 Processor
+1 Year Warranty for Handset, 6 Months for Accessories"
+"realme C25Y (Metal Grey, 64 GB)",4 GB RAM | 64 GB ROM | Expandable Upto 256 GB
+16.51 cm (6.5 inch) HD+ Display
+50MP + 2MP + 2MP | 8MP Front Camera
+5000 mAh Battery
+Unisoc T610 Octa Core Processor
+1 Year Warranty for Mobile and 6 Months for Accessories
+"REDMI 9i Sport (Metallic Blue, 64 GB)",4 GB RAM | 64 GB ROM | Expandable Upto 512 GB
+16.59 cm (6.53 inch) HD+ Display
+13MP Rear Camera | 5MP Front Camera
+5000 mAh Li-Polymer Battery
+MediaTek Helio G25 Processor
+Brand Warranty of 1 Year Available for Mobile and 6 Months for Accessories
+"REDMI 9i Sport (Coral Green, 64 GB)",4 GB RAM | 64 GB ROM | Expandable Upto 512 GB
+16.59 cm (6.53 inch) HD+ Display
+13MP Rear Camera | 5MP Front Camera
+5000 mAh Li-Polymer Battery
+MediaTek Helio G25 Processor
+Brand Warranty of 1 Year Available for Mobile and 6 Months for Accessories
+"REDMI 9i Sport (Carbon Black, 64 GB)",4 GB RAM | 64 GB ROM | Expandable Upto 512 GB
+16.59 cm (6.53 inch) HD+ Display
+13MP Rear Camera | 5MP Front Camera
+5000 mAh Li-Polymer Battery
+MediaTek Helio G25 Processor
+Brand Warranty of 1 Year Available for Mobile and 6 Months for Accessories
+"SAMSUNG Galaxy F12 (Celestial Black, 64 GB)",4 GB RAM | 64 GB ROM | Expandable Upto 512 GB
+16.55 cm (6.515 inch) HD+ Display
+48MP + 5MP + 2MP + 2MP | 8MP Front Camera
+6000 mAh Lithium-ion Battery
+Exynos 850 Processor
+1 Year Warranty Provided by the Manufacturer from Date of Purchase
+"realme Narzo 50A (Oxygen Blue, 64 GB)",4 GB RAM | 64 GB ROM | Expandable Upto 256 GB
+16.51 cm (6.5 inch) HD+ Display
+50MP + 2MP + 2MP | 8MP Front Camera
+6000 mAh Battery
+MediaTek Helio G85 Processor
+1 Year Warranty for Mobile and 6 Months for Accessories
+"SAMSUNG Galaxy F12 (Sky Blue, 64 GB)",4 GB RAM | 64 GB ROM | Expandable Upto 512 GB
+16.55 cm (6.515 inch) HD+ Display
+48MP + 5MP + 2MP + 2MP | 8MP Front Camera
+6000 mAh Lithium-ion Battery
+Exynos 850 Processor
+1 Year Warranty Provided by the Manufacturer from Date of Purchase
+"realme C11 2021 (Cool Grey, 64 GB)",4 GB RAM | 64 GB ROM | Expandable Upto 256 GB
+16.51 cm (6.5 inch) HD+ Display
+8MP Rear Camera | 5MP Front Camera
+5000 mAh Battery
+Octa-core Processor
+1 Year Warranty for Mobile and 6 Months for Accessories
+"realme C11 2021 (Cool Blue, 64 GB)",4 GB RAM | 64 GB ROM | Expandable Upto 256 GB
+16.51 cm (6.5 inch) HD+ Display
+8MP Rear Camera | 5MP Front Camera
+5000 mAh Battery
+Octa-core Processor
+1 Year Warranty for Mobile and 6 Months for Accessories
+"realme Narzo 50A (Oxygen Green, 128 GB)",4 GB RAM | 128 GB ROM | Expandable Upto 256 GB
+16.51 cm (6.5 inch) HD+ Display
+50MP + 2MP + 2MP | 8MP Front Camera
+6000 mAh Battery
+MediaTek Helio G85 Processor
+1 Year Warranty for Mobile and 6 Months for Accessories
+"realme Narzo 50A (Oxygen Green, 64 GB)",4 GB RAM | 64 GB ROM | Expandable Upto 256 GB
+16.51 cm (6.5 inch) HD+ Display
+50MP + 2MP + 2MP | 8MP Front Camera
+6000 mAh Battery
+MediaTek Helio G85 Processor
+1 Year Warranty for Mobile and 6 Months for Accessories
+"realme Narzo 50A (Oxygen Blue, 128 GB)",4 GB RAM | 128 GB ROM | Expandable Upto 256 GB
+16.51 cm (6.5 inch) HD+ Display
+50MP + 2MP + 2MP | 8MP Front Camera
+6000 mAh Battery
+MediaTek Helio G85 Processor
+1 Year Warranty for Mobile and 6 Months for Accessories
+"POCO M3 Pro 5G (Cool Blue, 64 GB)","4 GB RAM | 64 GB ROM | Expandable Upto 1 TB
+16.51 cm (6.5 inch) Full HD+ Display
+48MP + 2MP + 2MP | 8MP Front Camera
+5000 mAh Lithium-ion Polymer Battery
+MediaTek Dimensity 700 Processor
+Multiple Hands-free Voice Assistant
+One Year Warranty for Handset, 6 Months for Accessories"
+"realme 9i (Prism Blue, 64 GB)",4 GB RAM | 64 GB ROM | Expandable Upto 1 TB
+16.76 cm (6.6 inch) Full HD+ Display
+50MP + 2MP + 2MP | 16MP Front Camera
+5000 mAh Lithium ion Battery
+Qualcomm Snapdragon 680 (SM6225) Processor
+1 Year Manufacturer Warranty for Phone and 6 Months Warranty for in the Box Accessories
+"REDMI 9i (Sea Blue, 64 GB)",4 GB RAM | 64 GB ROM | Expandable Upto 512 GB
+16.59 cm (6.53 inch) HD+ Display
+13MP Rear Camera | 5MP Front Camera
+5000 mAh Lithium Polymer Battery
+MediaTek Helio G25 Processor
+Brand Warranty of 1 Year Available for Mobile and 6 Months for Accessories
