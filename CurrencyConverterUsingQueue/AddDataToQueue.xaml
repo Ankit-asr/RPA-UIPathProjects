@@ -1,0 +1,209 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="AddDataToQueue" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="628,515" sap2010:WorkflowViewState.IdRef="AddDataToQueue_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="39">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="32">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="AddDataToQueue" sap:VirtualizedContainerService.HintSize="476,405" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="dataTableCurrency" />
+      <Variable x:TypeArguments="x:String" Default="CurrencyConverterQueue" Name="queueName" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:ReadRange AddHeaders="True" DataTable="[dataTableCurrency]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="434,87" sap2010:WorkflowViewState.IdRef="ReadRange_1" Range="A1:C5" SheetName="Sheet1" WorkbookPath="C:\Users\ASR\Desktop\CurrenyConverterData.xlsx" />
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dataTableCurrency]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="434,186" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+      <ui:ForEachRow.Body>
+        <ActivityAction x:TypeArguments="sd:DataRow">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="554,1878" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Xe Currency Converter - Live Exchange Rates Today" sap:VirtualizedContainerService.HintSize="512,1786" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="956430ef-f9e2-4748-98b0-2f25535de5c4" Version="V1" WindowResize="Maximize">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="478,1570" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="ui:QueueItem" Name="addedItemInTransc" />
+                      <Variable x:TypeArguments="scg:IEnumerable(ui:QueueItem)" Name="queueItems" />
+                      <Variable x:TypeArguments="ui:QueueItem" Name="xyz" />
+                      <Variable x:TypeArguments="x:String" Name="convertedCurrency" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Amount'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="436,216" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="956430ef-f9e2-4748-98b0-2f25535de5c4" Text="[CurrentRow(&quot;Amount&quot;).ToString]" Version="V1">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.xe.com/currencyconverter/" DesignTimeRectangle="155, 414, 319, 50" ElementType="InputBox" FriendlyName="'300.00₹300.00'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;form&amp;gt;div&amp;gt;div' parentid='__next' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='__next' tag='DIV' /&gt;" Guid="1bfceafe-a668-4649-ac96-a4f124136e52" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAUMAAAA2CAYAAABdq/vBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARLSURBVHhe7d0/T9tAHIdxv4jOfRt9H0jdu3bkLSDmSrwImDrAmwCJoUN3sjSiioRCtiTEyfW+9yecz06wkFPAfj7Sr8LhIJ0ene2EFJvNxmjW6zjrypSacteUDMMw72iaOmUn65of37zYQBfDPIQugJrKLyzNKp8VwzDMO5qkTzsjGTqXB7FIIxhDOH18NOPx2IxGI3N3d8cwDPPhRz1T19S3+k7RxfA5gsvl0i2eTCZmPp+7WgJAH6hn6pr6ps6pd2kUXQz1gLaPWjCbzcKPAkA/qXPqXXraXMQQTqePrpgAMATqnboXg1i4L8KuUFtIABgC9W67O7TjYqg7L7q4yDVCAEOh3ql7/s6zi6G/Ja27LQAwJOqe+qcOFu41OcQQwADFGKqDhfuCGAIYoG0M7bgYPq1WxBDA4Kh76h8xBDBoLoZPaQztATEEMDSVGGpXSAwBDFGMoTpIDAEMFjEEAEvdWyqGdgr9owNiCGBoiCEAWMQQAKzOYji5PDafPn9pnG+XD2GV9efcHBWFKeKcXIdvpK7NaSdrcn/N+dfkZ76e20dybdYA6Bsfw6c0hk+vi+F9Ejzz2/xQCM9+h+PIB+zoIuYlBK0SsuY1z8fSZk0uRG77XPmxtFkDoI+6i2GLneHfiyO72zq16UrcnFYe62pNjfv+kTn/E47F7VKTx9qsAdBLLobLzneGxtye2RB+vzIv/b3sPGzXJ007Mb/zO70JRy3W5Nzz1E55/c4v7ijbrAHQT53FMBV3iT9+hQd2yk9vd4UnXddmTV1zQKunwW3WAOinegztwat2hpXT5GPz8z58o1EIjI1X9dSWGAJ4G53F0NxfmW8uhGfmNjzUSuU6HTEE8Da6i6H8OvM7w9pd5H3S2BBDAG+j2xha8XS58trCvdoEyYeOGygADqXzGBrzYH5+b75u6CJWi011R5ffXXZ4aQ2AAztADCW86Dq/fhjefZLuslwgKxHzcXze+TWd/rZZkws70G2Mm05/26wB0EcHiqEVrx/uCOL+t7uF2MVpjNH+NftOebc/0/jcbdYA6JvDxRAAPhBiCABWPYYdvAMFAD4aYggAFjEEAIsYAoBFDAHAcjG0/UtiyGegABgeYggAlo8hn44HYOCIIQBY1Riu/BfEEMDQEEMAsNQ99U8dJIYABqsSw9WqdAej0chsNpuwBAD6Tb1T99Q/ddDH0FZxPB6b+XwelgFAv6l36p76V4nhdDo1k8lLH/8OAP2g3ql7lRimu8PZbBaWAkA/qXNuVxhOkX0MyxjD0m4bF26BiqktJNcQAfSFeqauqW/+suBiuytUB4syxNAH0d9Z1tZRi3VxUXdbGIZhPvqoZ+qaOzUOd5Bj+9RBG8O1q2IeRL0QUW9g1p+3WaSzWLqZMwzDvMOJjUq7pY65nimCWQjVP3XQxXBXEPMo1sKoWcRJ/hMMwzD/bUKDsjbFZvkQPjetKYRluTb/AOqA9pbcjFFUAAAAAElFTkSuQmCC" InformativeScreenshot="b2e8315d63d6d36a267e528cc0ed1c63.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='eyJ1c2VySWQiOiJiMjQzM2JmNi0zNjNjLTQwYTYtYjgyMS1lODBhM2I2M2FhZGYifQ==/*yieldify*/' title='Xe Currency Converter - Live Exchange Rates Today' /&gt;" SearchSteps="Selector, FuzzySelector, Image">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="155, 386, 60, 24" ElementType="Text" FriendlyName="'Amount'" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' aaname='Amount' check:text='Amount' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEAAAAAcCAYAAADRJblSAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHJSURBVFhH7ZZNbsIwEIU5RNe5Rq/DNstcJFLuwQKukQULDoGExBEIrn/G9rM9SRNXqnCSJ70i7PHPfB6bHsTGtQOgz81qB0Cfm9UOgD43KxZA332Lr4pcX8SD2svWTbRVJ3r6ZsUAUIEAoGrE6U5dpep+EUedyxwA145OvhNtbSAcz0/qLFRLANjyV0k/zg3BiK+BrRJVHVgxtlq4NtRTnAiudXulLi0/HtuT/bjE4n3AodkDRXc30ycVAcDE5NdgARNhFC4WuG5oDBrJj4/1lbYUAG89dhEAF2w37E8qvAaQhJ0MF0raPED/wAKUJC4DgEuK2dvcK+A2B4T4a8BtcKptOrEUNB83fQV0iFaSxzwAflHeuEicmNKcNi7GCN8e3Mv/AeDuSuykzHIBfGAFcOVv5RZ2E+QCgHVwMxNvAPcw5gMI45QIgJ88PBmSm8D2z0uWbYO5YuND60ExzgZAtuOlDADmtQ4Fv9t60j8A0Prt/wClKEZuus+9AlK+imG8FDyC29QiAG+0/LMGjwKQfUyi79U5ABAmzA9YmzUAnzgftGYfpNmOuR4KtwTAJ4bWwUOOh4/3KIASk8lxACA96XTAC/0q3YP4AYJ8CK8vUuWiAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'From'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="436,216" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="WindowMessages" ScopeIdentifier="956430ef-f9e2-4748-98b0-2f25535de5c4" Text="[CurrentRow(&quot;From&quot;).ToString+&quot;[k(enter)]&quot;]" Version="V1">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.xe.com/currencyconverter/" DesignTimeRectangle="490, 426, 319, 50" ElementType="InputBox" FriendlyName="'INPUT midmarketFromCurr…'" FullSelectorArgument="&lt;webctrl aria-role='combobox' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='combobox' tag='INPUT' type='text' /&gt;" Guid="150420b0-f46d-4c39-9d06-03baa7b2368a" ImageBase64="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" InformativeScreenshot="4a4d9a4e812b930f05648587c17fcdca.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='eyJ1c2VySWQiOiJiMjQzM2JmNi0zNjNjLTQwYTYtYjgyMS1lODBhM2I2M2FhZGYifQ==/*yieldify*/' title='Xe Currency Converter - Live Exchange Rates Today' /&gt;" SearchSteps="Selector, FuzzySelector, Image">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="490, 398, 40, 24" ElementType="Text" FriendlyName="'From'" FullSelectorArgument="&lt;webctrl aaname='From' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='From' tag='LABEL' type='' check:text='From' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACwAAAAcCAYAAAAa/l2sAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEsSURBVFhH7ZTBDYMwDEU7RM9dg3W4cuwiSNmjB1ijhx46BBISI0DdkATigENDBAQqvvRRcWzycFwucDCdwGvrBF5bJ/Da0sBFDvEtgqvNSQ6lSg2pfwC+w6NQsR1qNnCZ3VXHGaQJ0f0Xk7HOg5Pp69lb/1b3xjqKYfkDY1ObGWbwFBlTORHEyXgtzipVKeU4w/ol8IbpS8aEUL3epIJHdwqjl+qeiXKo2KDL/sC2ox7+OfsRkV2m8iZjv4EdR2JiNg31zx0AozzXWKvlgV07HBoYj5TTDAcH5nqytp4y8ZXYA7DQjO9wJz/gg2gW8AebX0LYCszXCLBPcBvAJiBdENoCWIPSSXvyhZtccHWzsTkwDYItkhsfN4vbCrzF5j42gMedHBfU2PXWbuALxZZhb1kqvZ4AAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'To'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="436,216" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="WindowMessages" ScopeIdentifier="956430ef-f9e2-4748-98b0-2f25535de5c4" Text="[CurrentRow(&quot;To&quot;).ToString +&quot;[k(enter)]&quot;]" Version="V1">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.xe.com/currencyconverter/" DesignTimeRectangle="891, 426, 319, 50" ElementType="InputBox" FriendlyName="'INPUT midmarketToCurren…'" FullSelectorArgument="&lt;webctrl aria-role='combobox' id='midmarketToCurrency' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='combobox' id='midmarketToCurrency' tag='INPUT' type='text' /&gt;" Guid="b9a6220b-b0ba-48ed-87f1-a72e2650a634" ImageBase64="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" InformativeScreenshot="3182bb0ef674579e546ed31e69e14ef3.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='eyJ1c2VySWQiOiJiMjQzM2JmNi0zNjNjLTQwYTYtYjgyMS1lODBhM2I2M2FhZGYifQ==/*yieldify*/' title='Xe Currency Converter - Live Exchange Rates Today' /&gt;" SearchSteps="Selector, FuzzySelector, Image">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="891, 398, 18, 24" ElementType="Text" FriendlyName="'To'" FullSelectorArgument="&lt;webctrl aaname='To' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='To' tag='LABEL' type='' check:text='To' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABYAAAAcCAYAAABlL09dAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADWSURBVEhL7ZK9DYMwEEYZInXWyDq0lFkEyXukgDUoKBgCCYkRMBeDDuN/+eyQik96Luy7p7PlAi7KLZa5xTK6uGfweL7CsAGLw/mTWMsANcrqHrcISRObN6tamPDoCFk8NW9dKmHQYc0WmnhsocS9splxc4ZPhXLl/UliOa15dfk059RpYvNnyJvkin898WVvvKVjKLHI+RVH8v5xXkjiVUUsIbxiceZoWKPRxLrM3RDLLj6F7qIUCoHzIBbuQYjdDSp7MafhFdvFnIQmtiezGxaVxQeHL61ZwhmdSvlnAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NClick ClickType="Single" ContinueOnError="False" DisplayName="Click 'Convert'" sap:VirtualizedContainerService.HintSize="436,156" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="956430ef-f9e2-4748-98b0-2f25535de5c4" Version="V1">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.xe.com/currencyconverter/" DesignTimeRectangle="1106, 504, 104, 48" ElementType="Button" FriendlyName="'Convert'" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' aaname='Convert' check:text='Convert' /&gt;" Guid="203c0764-6605-46bf-aef2-edd99a0d9db8" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGwAAAA0CAYAAABvu91XAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMKSURBVHhe7ZxNbtswEIWz6Fl6lR6l68J36B0K5Abd5ALZFsgFsvGi2xoBagQNEiANzM68iBR/ngQZsdSRMw/4BoE9JON5HEob6SK4ViU3bGUaNOzHz7/h8/c/4ePX3+HD5i5cfHHmRuus9da6a/2ZqGE6gE3oLIv6UKsx7NO3ezrY+T+oH7kKw7yzbJJ3WjJMz0yW7NggXtOSYd5dtoldlgzTuxOW6NhA/VElw/zW3TbqjyoZxpIcW8AnRBFLcGwBnxBFLMGxBXxCFLEExxbwCVHEEhxbwCdEEUtwbAGfEEUswbEFfEIUsQTHFvAJUcQSHFvAJ0QRSzg5Ny/dar322weeuyaunsP+8Tls2HcnRLWYYZe7biGmBX7sbMRNeE6GbbaHbpVDuL5in6+4087PsKdw261xe1N/9xCuH7lZdUfWOclsLVRx1GabYqCYae7dUztfp/J/zX7Drl/r1305RjXnxlPNb5ie71jhJVyy7xteTaQaKXCpuFYsdN7Z7QYaOq774vdjeh3C9u4cDUu7f5ph9PhMpvdFzg1L3ZB1Wm1GKmTddWxDNZ9lhtVH30AXz4HKmGF9d9U7tT7GiiMx5bXdUxe0NnC8U+OmIfNGzs6wo47E3rC6MKmwxxqWPtPi539X8w7odZ73ZNjYjxWw49O1aYYOy8bu5YYBmycbw+epeVeG5bs4v/iXu7s9oiZewyYYlo9XFZuBzN0e4xMMm3SCvA3VIoaN3vmpBoreiN0lTjGsWL/cNErq3kq9sVMM65T9j6dGtZBhHfWPE9VHX6QuYp13nGFD+T3j640YJhRjz8ow503AJ0QRS3BsAZ8QRSzBsQV8QhSxBMcW8AlRxBIcW8AnRBFLcGwBnxBFLMGxBXxCFLEExxbwCVHEEhxbwCdEEUtwbAGfEEUswbEFfEIU+QN9tmke6PNHZm3TPDLrD6Xbpnko3V/7YJvmtQ8q7zKbxO5SFYap/NVFthh9dVGUd5oN8s6Kooap9MzUAXp34rf8y6B11npr3eM1q9agYS6bcsNWpRD+AckgwFFHPHWKAAAAAElFTkSuQmCC" InformativeScreenshot="a7209c215868d8269697d02276fe6199.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='eyJ1c2VySWQiOiJiMjQzM2JmNi0zNjNjLTQwYTYtYjgyMS1lODBhM2I2M2FhZGYifQ==/*yieldify*/' title='Xe Currency Converter - Live Exchange Rates Today' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NGetText DisplayName="Get Text '33.043008 Chinese'" sap:VirtualizedContainerService.HintSize="436,156" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="956430ef-f9e2-4748-98b0-2f25535de5c4" Version="V1">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.xe.com/currencyconverter/convert/?Amount=400&amp;From=INR&amp;To=CNY" DesignTimeRectangle="155, 531, 1056, 51" ElementType="Text" FriendlyName="'33.043008 Chinese'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;p' idx='2' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='P' /&gt;" Guid="ff059058-7d51-444d-a759-ef5a70b406d7" ImageBase64="" InformativeScreenshot="a6eaa331be3635c3c9de0139c7daf9af.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='eyJ1c2VySWQiOiJiMjQzM2JmNi0zNjNjLTQwYTYtYjgyMS1lODBhM2I2M2FhZGYifQ==/*yieldify*/' title='400 INR to CNY - Indian Rupees to Chinese Yuan Renminbi Exchange Rate' /&gt;" SearchSteps="Selector, FuzzySelector" />
+                      </uix:NGetText.Target>
+                      <uix:NGetText.Text>
+                        <OutArgument x:TypeArguments="x:String">[convertedCurrency]</OutArgument>
+                      </uix:NGetText.Text>
+                    </uix:NGetText>
+                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="436,254" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                      <ui:CommentOut.Body>
+                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="376,176" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,84" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[convertedCurrency]" />
+                        </Sequence>
+                      </ui:CommentOut.Body>
+                    </ui:CommentOut>
+                    <ui:AddQueueItem ServiceBaseAddress="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Add Queue Item" DueDate="[DateTime.Now.AddMinutes(1)]" sap:VirtualizedContainerService.HintSize="436,22" sap2010:WorkflowViewState.IdRef="AddQueueItem_2" Priority="Normal" QueueType="[queueName]">
+                      <ui:AddQueueItem.ItemInformation>
+                        <InArgument x:TypeArguments="x:String" x:Key="Amount">
+                          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="CurrentRow(&quot;Amount&quot;).ToString" />
+                        </InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="From">
+                          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="CurrentRow(&quot;From&quot;).ToString" />
+                        </InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="To">
+                          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="CurrentRow(&quot;To&quot;).ToString" />
+                        </InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="Result">
+                          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="convertedCurrency" />
+                        </InArgument>
+                      </ui:AddQueueItem.ItemInformation>
+                    </ui:AddQueueItem>
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="-8, -8, 1382, 744" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="e45dfe67752f578d32f9e5a33f9719dc.png" Selector="&lt;html app='chrome.exe' htmlwindowname='eyJ1c2VySWQiOiJiMjQzM2JmNi0zNjNjLTQwYTYtYjgyMS1lODBhM2I2M2FhZGYifQ==/*yieldify*/' title='Xe Currency Converter - Live Exchange Rates Today'/&gt;" Url="https://www.xe.com/currencyconverter/" />
+              </uix:NApplicationCard.TargetApp>
+            </uix:NApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEachRow.Body>
+    </ui:ForEachRow>
+  </Sequence>
+</Activity>
