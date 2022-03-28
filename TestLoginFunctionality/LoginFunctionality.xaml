@@ -1,0 +1,151 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="LoginFunctionality" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="696,2119" sap2010:WorkflowViewState.IdRef="LoginFunctionality_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="32">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="28">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="LoginFunctionality" sap:VirtualizedContainerService.HintSize="476,2054" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="SingleWindow" DisplayName="Use Browser Chrome: Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes an" sap:VirtualizedContainerService.HintSize="434,1962" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="0db1d499-caf1-4001-bdb9-969f59a67b71" Version="V1" WindowResize="Maximize">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,1746" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="334,81" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Url="https://www.amazon.in/" Version="V1" />
+            <uix:NClick ClickType="Single" DisplayName="Click 'I'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0db1d499-caf1-4001-bdb9-969f59a67b71" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.amazon.in/" DesignTimeRectangle="28, 151, 17, 14" FriendlyName="'I'" FullSelectorArgument="&lt;webctrl parentid='nav-hamburger-menu' tag='I' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='nav-hamburger-menu' tag='I' type='' aaname='' /&gt;" Guid="de873442-1512-4e46-999a-b8ea73cb13e9" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABUAAAASCAYAAAC0EpUuAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAySURBVDhPY1DWt/tPbUxbQ6kB6GMoNfGooRAGNQB9DKUmHjUUwqAGoI+h1MQ0MNTuPwAazUTCD+4+UgAAAABJRU5ErkJggg==" InformativeScreenshot="c1df887b1a6b7c0abf5f1877ae753d7b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NMouseScroll Direction="Down" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="334,236" sap2010:WorkflowViewState.IdRef="NMouseScroll_1" InteractionMode="HardwareEvents" MovementUnits="10" Version="V1">
+              <uix:NMouseScroll.SearchedElement>
+                <uix:SearchedElement DisplayName="{x:Null}">
+                  <uix:SearchedElement.Target>
+                    <uix:TargetAnchorable BrowserURL="https://www.amazon.in/" DesignTimeRectangle="8, -512, 348, 42" ElementType="Text" FriendlyName="'Sign In'" FullSelectorArgument="&lt;webctrl parentid='hmenu-content' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Sign In' parentid='hmenu-content' tag='A' type='' check:text='Sign In' /&gt;" Guid="127a9275-66d4-4bd3-b077-bff240330517" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAWAAAAAuCAYAAAAWRMPkAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANCSURBVHhe7dzPK2xhGMDx+y/4A2z8AXZWsiNSpBQKRVkopWyEvciCvS0pCkUpK8nGirKwYER+JAqN3xLP7XnuOdO5Q7eZcj3v6Pupk/Oe98yw+vb2zhm/YgIA+BbpdNqOKL8EGAC+CwEGACcEGACcEGAAcEKAAcAJAQYAJwQYAJwQYABwQoABwAkBBgAnBBgAnBBgAHBCgAHACQEGACcEGACcEGAAcEKAAcBJQQT4+vpaJiYmpLa2VmpqaqSnp0c2Nzdt7ubmRlpbW2VyctLGX217e1s6Ozvl8PAwugIAXyP4AD89PUl/f790dXXJxsaGbG1tyerqqiwvL9v88/OzzM7OWij/Bw19RUWF7O/vR1cA4GsEH2ANnwYwXvHm4u3tTc7Pz+X4+FheXl6iqx/p3NHRkd2nr/nMvwJ8f38vu7u7tgoHgHwFH2CNY3V1tczMzHwaSV0h9/X1ydzcnI0fHh5kcHBQSktLpaGhwY7m5ubMvIa0vr5ehoeH7X31vKSkREZGRuT19dXuScoOsL5PW1ubrcp1O6Sqqspev7a2ZvMAkKvgA/z+/i7z8/MWuZaWFju/vb2NZj8GeGpqyoJ7cXFhY12d6vZFMsAa1MXFxUzQl5aWpLGxUa6urmyc9FmAKysrM2PdAhkYGJCxsTEbA0Cugg9w7PLy0j5oKy8vl7KyMtsD1jgnA6xbCkNDQ3/FMDvQcYCTWxp6nk+As+/V30eAAeSrYAIc0xXn+Pi4bR/o9kQysPE5AQZQCAouwGpvb8/2djWKycDqinh0dNS2BDTUigADCFXwAb67u5OTk5PM0wz6IZtGtr293fZ3swMbB3N6elrOzs7sETUdE2AAoQk+wKenp9LU1CRFRUWZQz+M29nZsfnsAOsqeH193Z5U0EOfnuju7ibAAIITfICVRlX/SI2e/tRxrh4fH6W3t1cWFhaiKwAQhoIIcD70CxgHBwe2MtZti5WVFamrq5NUKhXdAQBh+HEB1v/Z0NHRIcXFxZntCv36MgCE5scFGAAKBQEGACcEGACcEGAAcEKAAcAJAQYAJwQYAJwQYABwQoABwAkBBgAnBBgAnBBgAHBCgAHACQEGACcEGACc/AlwWn4Dbhd0+OQUU+EAAAAASUVORK5CYII=" InformativeScreenshot="d7397005362f1faa8f4731f87bcef62d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in' /&gt;" SearchSteps="Selector" />
+                  </uix:SearchedElement.Target>
+                  <uix:SearchedElement.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:SearchedElement.Timeout>
+                </uix:SearchedElement>
+              </uix:NMouseScroll.SearchedElement>
+            </uix:NMouseScroll>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Sign In'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0db1d499-caf1-4001-bdb9-969f59a67b71" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.amazon.in/" DesignTimeRectangle="8, 588, 348, 42" ElementType="Text" FriendlyName="'Sign In'" FullSelectorArgument="&lt;webctrl parentid='hmenu-content' tag='A' idx='29' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='hmenu-content' tag='A' type='' aaname='Sign In' check:text='Sign In' /&gt;" Guid="53e11bea-25ca-4c47-bd0b-112c61959d4c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAWAAAAAuCAYAAAAWRMPkAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAN5SURBVHhe7dxNS1RRGMDxvoJ7F7nOVS4yV5pmmiapqaQkSZIk5Ns206TchquasCy1NEQIQySEEMGwFMXXFGvMVzRfFn6Cp55TM4wzF00xzx35P/DDuZx7x92fw5nRU74RhmEY5lhmZ2fH+JtfAswwDHNcExLgje1tAQD8fwQYACwhwABgCQEGAEsIMABYQoABwBICDACWEGAAsIQAA4AlBBgALCHAAGAJAQYASwgwAFhCgAHAEgIMAJYQYACwJCwC/M3rlUf19XIxOVkSk5LkVnGxfOjtNWvf5+flWk6OPG5oCHnuKPT190t+QYGMjI05rgPAYbk+wEurq3K3rExuFBZKd0+PfOzrk47OTnnT3m7WV9bW5HlTkwll8LNHQUN/Pi5OvgwPO64DwGG5PsAaPg2gb8f7L9Y3N2VqZkbGJiZkdX3d8R6la6Pj4+Y+fcbpnr0CvLC8LJ8GB80uPHgNAPbj+gBrHC8kJsqzxkbHSOoO+U5pqbz4vQvW68WVFSmvrJQz0dFyOS1N0tLTJTMry7+uIU1JTZV71dXmffX16agoqa6pkbWNjV3vrYIDrO+Tk5trduV6HJKQkGCef9fVFfIsAOzF9QH+ubUlL5ubTeSysrPN6/nFRf96cICfeDwmuF9nZ8217k71+CIwwBrU5tZWf9Bft7XJlYwMmfN6zXUgpwDHx8f7r/UIpLyiQh7U1e16DgD24/oA+8zMzZkP2s7FxsrZmBhzBqxxDgywHilUVlXtimFwoH0BDjzS0NcHCXDwvfr7CDCAgwqbAPvojvNhfb05PtDjicDA+l4TYADhIOwCrD4PDZmzXY1iYGB1R3y/ttYcCWio9V4CDMCtXB/gH0tLMjY56f82g37IppHNzcsz57vBgfUF86nHIxPT0+YranpNgAG4jesDPD41JVczMyUiIsJPP4zrHxgw68EB1l3w++5u800Fpd+euFlURIABuI7rA6w0qt6FBRM9/anXTvc50R3z7ZISedXS4rgOALaERYAPQv8AY3h01OyM9djibUeHXEpJkeGREcf7AcCWExdg/Z8N1/PzJTIy0n9coX++7HQvANh04gIMAOGCAAOAJQQYACwhwABgCQEGAEsIMABYQoABwBICDACWEGAAsIQAA4AlBBgALCHAAGAJAQYAS0ICLAzDMMyxDAFmGIaxNH8CvCO/ADrS1Mn6dZQ0AAAAAElFTkSuQmCC" InformativeScreenshot="5366637f97396083157910a182aed70c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in' /&gt;" SearchSteps="FuzzySelector, Image" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Email or'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,216" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="0db1d499-caf1-4001-bdb9-969f59a67b71" Text="anamfazal94@gmail.com" Version="V1">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.amazon.in/ap/signin?openid.pape.max_auth_age=0&amp;openid.return_to=https%3A%2F%2Fwww.amazon.in%2F%3F_encoding%3DUTF8%26ref_%3Dnav_em_hd_re_signin&amp;openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.assoc_handle=inflex&amp;openid.mode=checkid_setup&amp;openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&amp;&amp;ref_%3Dnav_em_hd_clc_signin_0_1_1_32" DesignTimeRectangle="543, 232, 296, 31" ElementType="InputBox" FriendlyName="'INPUT ap_email'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='email' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='email' aaname='               Email or mobile phone number             ' /&gt;" Guid="3ef31995-bddb-4619-9f89-72c14535b5ec" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAASwAAAAjCAYAAAAuXDcUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAERSURBVHhe7d0hroNQFEXRP3+N6QQqkIygroKJYAgWxfu5SSElqYeTrJUcAfgd3P1rACEEC4hxCtbr9WqPx6N1XWdmdumqRdWkb0ewxnFs7/e7TdPU5nk2M7t01aJqUrVpdwSr7/u2LEvbtu3zBuA61aJqUrVpdwTr+XyKFXAr1aRq0+4ULIC7ESwghmABMQQLiCFYQAzBAmIIFhBDsIAYggXEECwghmABMQQLiCFYQAzBAmIIFhBDsIAYggXEECwghmABMQQLiCFYQAzBAmIIFhBDsIAYP4NV11XXdf08AVyvmvTz8nPdrx+GQbSAW6gWVZOqTbsjWKU+VM3qF8zM7MpVi75jVU7BArgzwQJCtPYPXXVX/98rGlQAAAAASUVORK5CYII=" InformativeScreenshot="30e69c3785873dfc6eb32fc69fcea53d.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Amazon Sign In' /&gt;" SearchSteps="FuzzySelector, Image">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="543, 211, 296, 21" ElementType="Text" FriendlyName="'Email or'" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' aaname='               Email or mobile phone number             ' check:text='Email or mobile phone number' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ClickType="Single" DisplayName="Click 'INPUT continue'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0db1d499-caf1-4001-bdb9-969f59a67b71" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.amazon.in/ap/signin?openid.pape.max_auth_age=0&amp;openid.return_to=https%3A%2F%2Fwww.amazon.in%2F%3F_encoding%3DUTF8%26ref_%3Dnav_em_hd_re_signin&amp;openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.assoc_handle=inflex&amp;openid.mode=checkid_setup&amp;openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&amp;&amp;ref_%3Dnav_em_hd_clc_signin_0_1_1_32" DesignTimeRectangle="544, 278, 294, 29" ElementType="Button" FriendlyName="'INPUT continue'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' aaname='' /&gt;" Guid="3a1decdc-51f9-4500-a6d3-b67b3dde4eb5" ImageBase64="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" InformativeScreenshot="cf048b9b60f175bde8795d023ffa1920.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Amazon Sign In' /&gt;" SearchSteps="FuzzySelector, Image" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,216" sap2010:WorkflowViewState.IdRef="NTypeInto_2" IsPassword="True" ScopeIdentifier="0db1d499-caf1-4001-bdb9-969f59a67b71" Text="ASRanm21269493@" Version="V1">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.amazon.in/ap/signin" DesignTimeRectangle="543, 265, 296, 31" ElementType="InputBoxPassword" FriendlyName="'INPUT ap_password'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='password' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='password' aaname='                                 Password                                      ' /&gt;" Guid="acf429e3-ad60-4f14-82b1-8310e266d293" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAASwAAAAjCAYAAAAuXDcUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAERSURBVHhe7d0hroNQFEXRP3+N6QQqkIygqoaRIECjeD83KaQk9XCStZIjAL+Du38NIIRgATFOwXq9Xu3xeLSu68zMLl21qJr07QjWOI7t/X63aZraPM9mZpeuWlRNqjbtjmD1fd+WZWnbtn3eAFynWlRNqjbtjmA9n0+xAm6lmlRt2p2CBXA3ggXEECwghmABMQQLiCFYQAzBAmIIFhBDsIAYggXEECwghmABMQQLiCFYQAzBAmIIFhBDsIAYggXEECwghmABMQQLiCFYQAzBAmIIFhDjZ7Dquuq6rp8ngOtVk35efq779cMwiBZwC9WialK1aXcEq9SHqln9gpmZXblq0XesyilYAHcmWECI1v4BAr5X+UY48acAAAAASUVORK5CYII=" InformativeScreenshot="21b1717f63f6d299105fa2bce0d07a7b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Amazon Sign In' /&gt;" SearchSteps="FuzzySelector, Image">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="543, 244, 120, 21" ElementType="Text" FriendlyName="'Password'" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' aaname='                                 Password                                      ' check:text='Password' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHwAAAAZCAYAAADzJ0pXAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAO1SURBVGhD7Ze/a9tAFMf7L+iv0GroEOjQTPEYk6GGLsKLoUNFhyAKRXQoooMRGYIIGE/FHgLJEOTBoAyNM6QgQ0EZCg4U1CGDIAEVMgg6fPve3cl2XGPabKnuCwfSu3c/rM+9985PoFUpaeAVkwZeMWngFZMGXjFp4BVThYCniPYDBIMYubJUUSuAx/ANA8ZCM5+1EXx57J9J/a7WETJlqaLWALfROx9jPOzB3uL3OnrflMujlAbOWgPcpyep4rMrIt065k+VIzkO4LQaaOxQaznozaK/wHTow2Y7NbszVh83R9x1YAm7BWeQ4OdViIBT7CgVHriJ0V/1fjKlWeV7b9ear3k+x5aOyG8/wjSfIuy6cA/VHD8i+K/LNWnPGvjfAU8HTQG8fcKfKkGwbcNlGPuein4HETHPTx2YhonmO+4L4O32yRuYduvkU4f9UdrdToSsGMNdAFAeKmOnT9V2/u6MaOI72hOvY9Ih+khrbpvUZ8o+UtzhPZioPWU7PXdo53c0v1mO4b00UVtYr6paA7yGuojIuvxQJkG9US4LSg8t8rVwdA1kJ2163oRzmCD/pRxIyR6DaMKnqBTRKlRg/J7XcTEmY9wxYW7VsakOT3KwSX3qII0cei4zDOkmhL0ATwI34J3OZ/9jTPm7NPBlLQGn9Ol1Q0qXqpvT9rELa3sDG1vU/4xhSuC4S9Br1cSHFpFFqVsMo9Tqiqgk+1ML/qlMuRKKCf9riv6OAfc0gkc+7ucU4Svy3Y3EeAnfgD8Rw0j3s1AJfN6/ZowGvqz7H3NZxblHaZsiZzBFnueYfppHeKnimurvW07jJrzzhai7opr6UkZ7/zsbIlFXrY6PttFGmOWIdulfwQdPpHt7KE9Zdsxr8EEo54rFwTCeB6JkrAK+aowG/gDgMm2r2lpkiN5zJEng+eUY0WUqDkI2lCmV/dJJiPgqE/ak2yD7JoJLnk0CZr+ydqefuJ9tNsKyhHzvo8m2Fz7GP1K6ALbFoasfMO7VwPGthzqP2fIQXk2R0GVSzKGBL2s98NkFin0obbtvF2r4yJb1XrXa61BATA42BCBpN9HYi2e1PB/awm7yRYt1GVAdJ78lMOnIRYMvYWqOjTdHSNU9YSVwLj2D+X5qLRcOlQ0N/EEqRLQWCxezmX7JvvxOvZcqyMb2eYZ/gNTc/zIH72d5LxXWA4FrPVZp4BWTBl4xaeAVkwZeMWngFdM94GdnZ+h2uwiCQLf/tM2ATyYTXFxcIMsy3N7e6vZftlv8Bt07fU8aozd9AAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ClickType="Single" DisplayName="Click 'INPUT signInSubmit'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0db1d499-caf1-4001-bdb9-969f59a67b71" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.amazon.in/ap/signin" DesignTimeRectangle="544, 319, 294, 29" ElementType="Button" FriendlyName="'INPUT signInSubmit'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' aaname='' /&gt;" Guid="4229e98b-f495-4628-9ed8-e6b071639832" ImageBase64="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" InformativeScreenshot="fc4c03869cf25bc1ab193e1590d9ecb3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Amazon Sign In' /&gt;" SearchSteps="Selector, Image" />
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1382, 744" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF5SURBVDhPlVM9S8NQFBW0+QOO2h+gU9vdSbuLNP0HprtDfoBIhYKgWFyFLLpUC10EjbvawcFC4qJDm4CDllQdHHq9JzdfbYLUA4e8d98959738t4cESnMA2afOSuQC40Cg31EkrBtm3Rdp4qqklqtkmEYwUoKDRi4MhZ0u12az+VoYYowzIALg6GMBVqt5gs2ymWyLCuaL+fzQcYEhikDx3H8LkzTpMt2299C2EUG0gbYf6FUikRJZiBtEFaECbo5bjb/ZxAm79Xr/nxb06KY53l+LIG0QaFYjAQ4yOQfQTdTCAy+HJkycIBLfOIQ4AtRhbe1zmajd5fGFt+J+x1hZNBZJfqwEPgbt1sifNwlOoM0NBjcEJ3z8I4XR3E3KXwOiF5aUqy1iEjiDF4vxAS8WpMqvUOiJ2bviKtvSlXkoSDWA4P4Kr89SCJMkMwcB1/qrPATupa8H/4bYHCVGxhNAC0+n8Yd9LliNvzHhOd8wvxGZEYglzWk/AJk0E1AkKBI3AAAAABJRU5ErkJggg==" InformativeScreenshot="16f5494fb7d89d2a8f334cc073942889.png" Selector="&lt;html app='chrome.exe' title='Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in'/&gt;" Url="https://www.amazon.in/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

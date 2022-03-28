@@ -1,0 +1,206 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="TestCaseOfAmazonLogin" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="862,1696" sap2010:WorkflowViewState.IdRef="TestCaseOfAmazonLogin_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:uuam="clr-namespace:UiPath.UIAutomationNext.Activities.Models;assembly=UiPath.UIAutomationNext.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="35">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Testing</x:String>
+      <x:String>UiPath.Testing.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.ComponentModel</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="24">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Testing</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="TestCaseOfAmazonLogin" sap:VirtualizedContainerService.HintSize="872,1631" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="ExpectedResult" />
+      <Variable x:TypeArguments="x:String" Name="Value" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="... Given" sap:VirtualizedContainerService.HintSize="830,152" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">[ExpectedResult]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">Sign In</InArgument>
+        </Assign.Value>
+      </Assign>
+    </Sequence>
+    <Sequence DisplayName="... When" sap:VirtualizedContainerService.HintSize="830,204" sap2010:WorkflowViewState.IdRef="Sequence_3">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke LoginFunctionality workflow" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="LoginFunctionality.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <scg:Dictionary x:TypeArguments="x:String, Argument" />
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+    </Sequence>
+    <Sequence DisplayName="... Then" sap:VirtualizedContainerService.HintSize="830,1103" sap2010:WorkflowViewState.IdRef="Sequence_4">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes an" sap:VirtualizedContainerService.HintSize="788,1011" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="e9203ef7-fbbe-4ee5-a293-32f471d3544b" Version="V1" WindowResize="Maximize">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="754,795" sap2010:WorkflowViewState.IdRef="Sequence_5">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NClick ClickType="Single" DisplayName="Click 'I'" sap:VirtualizedContainerService.HintSize="712,156" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e9203ef7-fbbe-4ee5-a293-32f471d3544b" Version="V1">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.amazon.in/?_encoding=UTF8&amp;ref_=nav_em_hd_re_signin&amp;" DesignTimeRectangle="28, 151, 17, 14" FriendlyName="'I'" FullSelectorArgument="&lt;webctrl parentid='nav-hamburger-menu' tag='I' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='nav-hamburger-menu' tag='I' type='' aaname='' /&gt;" Guid="766856c4-28ed-4205-86d0-136a2984fae1" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABUAAAASCAYAAAC0EpUuAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAySURBVDhPY1DWt/tPbUxbQ6kB6GMoNfGooRAGNQB9DKUmHjUUwqAGoI+h1MQ0MNTuPwAazUTCD+4+UgAAAABJRU5ErkJggg==" InformativeScreenshot="0a6956ba7ce0da6c5fcdd871a557b3aa.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in' /&gt;" SearchSteps="FuzzySelector, Image" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NMouseScroll Direction="Down" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="712,236" sap2010:WorkflowViewState.IdRef="NMouseScroll_2" InteractionMode="HardwareEvents" MovementUnits="10" Version="V1">
+                <uix:NMouseScroll.SearchedElement>
+                  <uix:SearchedElement DisplayName="{x:Null}">
+                    <uix:SearchedElement.Target>
+                      <uix:TargetAnchorable BrowserURL="https://www.amazon.in/" DesignTimeRectangle="8, 645, 348, 42" ElementType="Text" FriendlyName="'Sign In'" FullSelectorArgument="&lt;webctrl aaname='Sign In' parentid='hmenu-content' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='hmenu-content' tag='A' type='' check:text='Sign In' /&gt;" Guid="4a025cfa-db25-4b63-817a-4691e37a0c7a" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAWAAAAAuCAYAAAAWRMPkAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANCSURBVHhe7dzPK2xhGMDx+y/4A2z8AXZWsiNSpBQKRVkopWyEvciCvS0pCkUpK8nGirKwYER+JAqN3xLP7XnuOdO5Q7eZcj3v6Pupk/Oe98yw+vb2zhm/YgIA+BbpdNqOKL8EGAC+CwEGACcEGACcEGAAcEKAAcAJAQYAJwQYAJwQYABwQoABwAkBBgAnBBgAnBBgAHBCgAHACQEGACcEGACcEGAAcEKAAcBJQQT4+vpaJiYmpLa2VmpqaqSnp0c2Nzdt7ubmRlpbW2VyctLGX217e1s6Ozvl8PAwugIAXyP4AD89PUl/f790dXXJxsaGbG1tyerqqiwvL9v88/OzzM7OWij/Bw19RUWF7O/vR1cA4GsEH2ANnwYwXvHm4u3tTc7Pz+X4+FheXl6iqx/p3NHRkd2nr/nMvwJ8f38vu7u7tgoHgHwFH2CNY3V1tczMzHwaSV0h9/X1ydzcnI0fHh5kcHBQSktLpaGhwY7m5ubMvIa0vr5ehoeH7X31vKSkREZGRuT19dXuScoOsL5PW1ubrcp1O6Sqqspev7a2ZvMAkKvgA/z+/i7z8/MWuZaWFju/vb2NZj8GeGpqyoJ7cXFhY12d6vZFMsAa1MXFxUzQl5aWpLGxUa6urmyc9FmAKysrM2PdAhkYGJCxsTEbA0Cugg9w7PLy0j5oKy8vl7KyMtsD1jgnA6xbCkNDQ3/FMDvQcYCTWxp6nk+As+/V30eAAeSrYAIc0xXn+Pi4bR/o9kQysPE5AQZQCAouwGpvb8/2djWKycDqinh0dNS2BDTUigADCFXwAb67u5OTk5PM0wz6IZtGtr293fZ3swMbB3N6elrOzs7sETUdE2AAoQk+wKenp9LU1CRFRUWZQz+M29nZsfnsAOsqeH193Z5U0EOfnuju7ibAAIITfICVRlX/SI2e/tRxrh4fH6W3t1cWFhaiKwAQhoIIcD70CxgHBwe2MtZti5WVFamrq5NUKhXdAQBh+HEB1v/Z0NHRIcXFxZntCv36MgCE5scFGAAKBQEGACcEGACcEGAAcEKAAcAJAQYAJwQYAJwQYABwQoABwAkBBgAnBBgAnBBgAHBCgAHACQEGACcEGACc/AlwWn4Dbhd0+OQUU+EAAAAASUVORK5CYII=" InformativeScreenshot="d7397005362f1faa8f4731f87bcef62d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in' /&gt;" SearchSteps="FuzzySelector" />
+                    </uix:SearchedElement.Target>
+                    <uix:SearchedElement.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:SearchedElement.Timeout>
+                  </uix:SearchedElement>
+                </uix:NMouseScroll.SearchedElement>
+              </uix:NMouseScroll>
+              <uta:VerifyControlAttribute AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Control Attribute" sap:VirtualizedContainerService.HintSize="712,230" sap2010:WorkflowViewState.IdRef="VerifyControlAttribute_1" Operator="Equality" OutputArgument="Text" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="False">
+                <uta:VerifyControlAttribute.ActivityToTest>
+                  <ActivityAction>
+                    <uix:NGetText DisplayName="Get Text Actual Result" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="e9203ef7-fbbe-4ee5-a293-32f471d3544b" Version="V1">
+                      <uix:NGetText.OutUiElement>
+                        <OutArgument x:TypeArguments="ui:UiElement">
+                          <VariableReference x:TypeArguments="ui:UiElement">
+                            <VariableReference.Variable>
+                              <Variable x:TypeArguments="ui:UiElement" Name="OutUiElement" />
+                            </VariableReference.Variable>
+                          </VariableReference>
+                        </OutArgument>
+                      </uix:NGetText.OutUiElement>
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.amazon.in/?_encoding=UTF8&amp;ref_=nav_em_hd_re_signin&amp;" DesignTimeRectangle="8, 588, 348, 42" ElementType="Text" FriendlyName="'Sign Out'" FullSelectorArgument="&lt;webctrl aaname='Sign Out' parentid='hmenu-content' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='hmenu-content' tag='A' type='' /&gt;" Guid="13f772f2-d574-43ed-b5e3-d8d5817aa27a" InformativeScreenshot="7eacea760327dcea4cf843540eae2f5a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in' /&gt;" SearchSteps="FuzzySelector">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target DesignTimeRectangle="8, 544, 348, 42" ElementType="Text" FriendlyName="'Customer Service'" FullSelectorArgument="&lt;webctrl aaname='Customer Service' parentid='hmenu-content' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Customer Service' parentid='hmenu-content' tag='A' type='' check:text='Customer Service' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetText.Target>
+                      <uix:NGetText.Text>
+                        <OutArgument x:TypeArguments="x:String">[Value]</OutArgument>
+                      </uix:NGetText.Text>
+                      <uix:NGetText.WordsInfo>
+                        <OutArgument x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)">
+                          <VariableReference x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)">
+                            <VariableReference.Variable>
+                              <Variable x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)" Name="WordsInfo" />
+                            </VariableReference.Variable>
+                          </VariableReference>
+                        </OutArgument>
+                      </uix:NGetText.WordsInfo>
+                    </uix:NGetText>
+                  </ActivityAction>
+                </uta:VerifyControlAttribute.ActivityToTest>
+                <uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                  <ActivityFunc x:TypeArguments="x:Object">
+                    <uta:ArgumentsBridge sap2010:WorkflowViewState.IdRef="ArgumentsBridge_1">
+                      <uta:ArgumentsBridge.Input>
+                        <InArgument x:TypeArguments="x:Object">
+                          <VariableValue x:TypeArguments="x:Object">
+                            <VariableValue.Variable>
+                              <Variable x:TypeArguments="x:Object" Name="Text" />
+                            </VariableValue.Variable>
+                          </VariableValue>
+                        </InArgument>
+                      </uta:ArgumentsBridge.Input>
+                    </uta:ArgumentsBridge>
+                  </ActivityFunc>
+                </uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                <uta:VerifyControlAttribute.Expression>
+                  <InArgument x:TypeArguments="x:String">[ExpectedResult]</InArgument>
+                </uta:VerifyControlAttribute.Expression>
+              </uta:VerifyControlAttribute>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="-8, -8, 1382, 744" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF5SURBVDhPlVM9S8NQFBW0+QOO2h+gU9vdSbuLNP0HprtDfoBIhYKgWFyFLLpUC10EjbvawcFC4qJDm4CDllQdHHq9JzdfbYLUA4e8d98959738t4cESnMA2afOSuQC40Cg31EkrBtm3Rdp4qqklqtkmEYwUoKDRi4MhZ0u12az+VoYYowzIALg6GMBVqt5gs2ymWyLCuaL+fzQcYEhikDx3H8LkzTpMt2299C2EUG0gbYf6FUikRJZiBtEFaECbo5bjb/ZxAm79Xr/nxb06KY53l+LIG0QaFYjAQ4yOQfQTdTCAy+HJkycIBLfOIQ4AtRhbe1zmajd5fGFt+J+x1hZNBZJfqwEPgbt1sifNwlOoM0NBjcEJ3z8I4XR3E3KXwOiF5aUqy1iEjiDF4vxAS8WpMqvUOiJ2bviKtvSlXkoSDWA4P4Kr89SCJMkMwcB1/qrPATupa8H/4bYHCVGxhNAC0+n8Yd9LliNvzHhOd8wvxGZEYglzWk/AJk0E1AkKBI3AAAAABJRU5ErkJggg==" InformativeScreenshot="868b277f20a4bbebcad8ffd5f634fd85.png" Selector="&lt;html app='chrome.exe' title='Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in'/&gt;" Url="https://www.amazon.in/?_encoding=UTF8&amp;ref_=nav_em_hd_re_signin&amp;" />
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+    </Sequence>
+  </Sequence>
+</Activity>
